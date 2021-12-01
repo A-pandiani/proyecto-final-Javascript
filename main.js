@@ -1,4 +1,3 @@
-
 const fernet = 1400;
 const coca = 210;
 const hielo = 200;
@@ -100,3 +99,16 @@ const tabaco =[
 console.log(tabaco.sort(function(a,b){
     if(a.value > b.value){return 1;}else if(a.value < b.value){return-1}
 }));
+
+ 
+let titulo = document.getElementById("titulo");
+titulo.style.color = "red";
+  
+let parrafo = document.createElement("p");
+parrafo.innerHTML = "<h2> Bienvenidos</h2>";
+document.body.appendChild(parrafo);
+let boton = document.getElementById("boton");
+boton.onclick = function(){
+    titulo.style.color = "green";
+
+    }
