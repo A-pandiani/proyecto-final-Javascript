@@ -21,8 +21,9 @@
     </header>
     <div class="Tarjeta">
         <div class="cards">
-            <div class="img">
-                <img class="img" src="./img/fernet.jpg" alt="">
+            <div class="contImg">
+                <img onclick="agregarAlCarrito({id:0, name: 'fernet'});"
+                src="./img/fernet.jpg" class="img" alt="">
             </div>
             <h3></h3>
             <p class="texto">this is s demo post</p>
@@ -30,71 +31,97 @@
         </div>
 
         <div class="cards">
-            <div class="img"><img class="img" src="./img/vodka.png" alt=""></div>
+            <div class="contImg">
+                <img onclick="agregarAlCarrito({id:1, name: 'vodka'});"
+                src="./img/vodka.png" class="img" alt="">
+            </div>
+            <h3></h3>
+            <p class="texto">this is s demo post</p>
+            <button id="botonDos" class="btn btn-info">Comprar</button>
+        </div>
+
+        <div class="cards">
+            <div class="contImg">
+                <img onclick="agregarAlCarrito({id:2, name: 'Bombai'});"
+                src="./img/gin.jpg" class="img" alt="">
+            </div>
             <h3></h3>
             <p class="texto">this is s demo post</p>
             <a class="link" href="#">Comprar</a>
         </div>
 
         <div class="cards">
-            <div class="img"><img class="img" src="./img/gin.jpg" alt=""></div>
+            <div class="contImg">
+                <img onclick="agregarAlCarrito({id:3, name: 'herederos'});"
+                src="./img/herededro.jpg" class="img" alt="">
+            </div>
+            <h3></h3>
+            <p class="texto">this is s demo post</p>
+            <a class="link" href="#">Comprar</a>
+        </div> 
+
+        <div class="cards">
+            <div class="contImg">
+                <img onclick="agregarAlCarrito({id:4, name: 'marlboro'});"
+    src="./img/marlboro.jpg" class="img" alt="">
+            </div>
+            <h3></h3>
+            <p class="texto">this is s demo post</p>
+            <a class="link" href="#">Comprar</a>
+        </div> 
+
+        <div class="cards">
+            <div class="contImg">
+                <img onclick="agregarAlCarrito({id:5, name: 'philip'});"
+                src="./img/philip.jpg" class="img" alt="">
+            </div>
+            <h3></h3>
+            <p class="texto">this is s demo post</p>
+            <a class="link" href="#">Comprar</a>
+        </div> 
+
+        <div class="cards">
+            <div class="contImg">
+                <img onclick="agregarAlCarrito({id:6, name: 'lucky'});"
+                src="./img/lucky.jpg" class="img" alt="">
+            </div>
             <h3></h3>
             <p class="texto">this is s demo post</p>
             <a class="link" href="#">Comprar</a>
         </div>
 
         <div class="cards">
-            <div class="img"><img class="img" src="./img/herededro.jpg" alt=""></div>
+            <div class="contImg">
+                <img onclick="agregarAlCarrito({id:7, name: 'camel'});"
+                src="./img/camel.jpg" class="img" alt="">
+            </div>
             <h3></h3>
             <p class="texto">this is s demo post</p>
             <a class="link" href="#">Comprar</a>
         </div> 
-
-        <div class="cards">
-            <div class="img"><img class="img" src="./img/marlboro.jpg" alt=""></div>
-            <h3></h3>
-            <p class="texto">this is s demo post</p>
-            <a class="link" href="#">Comprar</a>
-        </div> 
-
-        <div class="cards">
-            <div class="img"><img class="img" src="./img/philip.jpg" alt=""></div>
-            <h3></h3>
-            <p class="texto">this is s demo post</p>
-            <a class="link" href="#">Comprar</a>
-        </div> 
-
-        <div class="cards">
-            <div class="img"><img class="img" src="./img/lucky.jpg" alt=""></div>
-            <h3></h3>
-            <p class="texto">this is s demo post</p>
-            <a class="link" href="#">Comprar</a>
-        </div>
-
-        <div class="cards">
-            <div class="img"><img class="img" src="./img/camel.jpg" alt=""></div>
-            <h3></h3>
-            <p class="texto">this is s demo post</p>
-            <a class="link" href="#">Comprar</a>
-        </div> 
-
-
     </div>
+ <!--    <br><br>
+<div onclick="mostrarElCarrito()" class="agregarAlCarrito">ver el carrito</div>
+    <br><br>
+    <div onclick="borrarElCarrito()" class="agregarAlCarrito">borrar carrito</div>
+    <br><br>
+    <div id="listado-carrito">No tengo productos</div> -->
    
 
     <footer class="footer">
-        <div class="foo">
+        <div onclick="mostrarInformacion({id:0,telefono:`3415094535´)};" class="foo">
             <h4>Telefono</h4>
             <p>3415094535</p>
         </div>
-        <div class="foo">
+        <div onclick="mostrarInformacion({id:1,Email:`kira@hotmail.com´)};" class="foo">
             <h4>Email</h4>
-            <p>3415094535</p>
+            <p>kira@hotmail.com</p>
         </div>
-        <div class="foo">
+        <div onclick="mostrarInformacion({id:2,Direccion:`Rosario,Santa fe´)};"  class="foo">
             <h4>Direccion</h4>
-            <p>3415094535</p>
+            <p>Rosario,Santa fe</p>
         </div>
+<div></div>  
     </footer>
   
 

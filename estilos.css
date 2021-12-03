@@ -39,7 +39,36 @@ text-align: center;
     nav>a:hover {
         text-decoration: underline;
     }
-     body{
+   #boton{
+    background: #333EFF20;
+    color: blue;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 10px;
+padding: 10px;
+width: 100%;
+display: inline;
+text-align: center;
+   }  
+    
+   #botonDos{
+    background: #333EFF20;
+    color: blue;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 10px;
+padding: 10px;
+width: 100%;
+display: inline;
+text-align: center;
+   }
+   .agregarAlCarrito{
+       background-color: chartreuse;
+       padding: 20px;
+       width: 200px;
+   }
+    
+    body{
         font-family: 'Open Sans', sans-serif;
         background-color: rgb(5, 5, 71);
         
@@ -94,6 +123,7 @@ footer{
     padding: 60px 0px 30px 0px;
     margin: 2px;
     overflow: hidden;
+    text-align: center;
 }
 .foo{
     color: white;

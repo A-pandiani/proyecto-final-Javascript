@@ -1,4 +1,4 @@
-const fernet = 1400;
+/* const fernet = 1400;
 const coca = 210;
 const hielo = 200;
 const vodka = 1300;
@@ -67,8 +67,8 @@ if(respuestaClave == "gin"){
     if(respuestaEnvio == "si"){
         alert("Le quedaria $"+ parseInt(sumarGin(gin,sprite,hielo)+ sumarEnvio(envio)));
     }
-}
-class Producto{
+} */
+/* class Producto{
     constructor(marca, nombre, precio, moneda,){
         this.marca = marca;
         this.nombre = nombre;
@@ -96,19 +96,31 @@ console.log(Fernet);
 const tabaco =[
     {name: "marlboro", value:280,size:20},{name:"philips", value:290,size:20},{name:"lucky", value: 170, size:10},{name:"camel", value:210, size:20}
 ];
-console.log(tabaco.sort(function(a,b){
-    if(a.value > b.value){return 1;}else if(a.value < b.value){return-1}
-}));
 
- 
-let titulo = document.getElementById("titulo");
+
+/* console.log(tabaco.sort(function(a,b){
+    if(a.value > b.value){return 1;}else if(a.value < b.value){return-1}
+})); */
+
+
+
+ let titulo = document.getElementById("titulo");
 titulo.style.color = "red";
   
 let parrafo = document.createElement("p");
-parrafo.innerHTML = "<h2> Bienvenidos</h2>";
+parrafo.innerHTML = "<h2> Parrafo añadido</h2>";
+parrafo.style.color ="white";
 document.body.appendChild(parrafo);
 let boton = document.getElementById("boton");
 boton.onclick = function(){
-    titulo.style.color = "green";
+    titulo.style.color = "green"; 
 
     }
+   let botonDos = document.getElementById("botonDos");
+botonDos.onclick = function(){
+    subtitulo.style.color = "red";
+
+    } 
+
+ 
+    
