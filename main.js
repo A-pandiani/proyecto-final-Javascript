@@ -68,7 +68,7 @@ if(respuestaClave == "gin"){
         alert("Le quedaria $"+ parseInt(sumarGin(gin,sprite,hielo)+ sumarEnvio(envio)));
     }
 } */
-/* class Producto{
+ /* class Producto{
     constructor(marca, nombre, precio, moneda,){
         this.marca = marca;
         this.nombre = nombre;
@@ -91,17 +91,17 @@ const gin2 = new Producto("Herederos","gin",2200,"$")
 console.log(vodkas);
 console.log(gins);
 console.log(gin2)
-console.log(Fernet);
+console.log(Fernet); */
 
 const tabaco =[
     {name: "marlboro", value:280,size:20},{name:"philips", value:290,size:20},{name:"lucky", value: 170, size:10},{name:"camel", value:210, size:20}
 ];
 
 
-/* console.log(tabaco.sort(function(a,b){
+ console.log(tabaco.sort(function(a,b){
     if(a.value > b.value){return 1;}else if(a.value < b.value){return-1}
-})); */
-
+}));
+ 
 
 
  let titulo = document.getElementById("titulo");
@@ -109,7 +109,8 @@ titulo.style.color = "red";
   
 let parrafo = document.createElement("p");
 parrafo.innerHTML = "<h2> Parrafo añadido</h2>";
-parrafo.style.color ="white";
+parrafo.style.color ="white"
+
 document.body.appendChild(parrafo);
 let boton = document.getElementById("boton");
 boton.onclick = function(){
@@ -122,5 +123,10 @@ botonDos.onclick = function(){
 
     } 
 
- 
+ let Producto = document.createElement("div");
+Producto.innerHTML = JSON.stringify(tabaco);
+Producto.style.color = "white";
+
+document.body.appendChild(Producto);
+
     
